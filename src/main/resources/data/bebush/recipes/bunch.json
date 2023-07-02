@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "bebush:my_plant_item"
+    }
+  },
+  "result": {
+    "item": "bebush:bunch",
+    "count": 1
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BBB",
+    "PPP",
+    "BBB"
+  ],
+  "key": {
+    "B": {
+      "item": "minecraft:paper"
+    },
+    "P": {
+      "item": "bebush:bunch"
+    }
+  },
+  "result": {
+    "item": "bebush:igar",
+    "count": 1
+  }
+}
