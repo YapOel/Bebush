@@ -1,6 +1,7 @@
 {
   "parent": "block/cross",
   "textures": {
-    "cross": "bebush:block/my_plant"
+    "cross": "bebush:block/my_plant",
+    "particle": "bebush:block/my_plant"
   }
 }

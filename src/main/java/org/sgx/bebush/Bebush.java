@@ -32,7 +32,7 @@ public class Bebush implements ModInitializer {
 
 	public static final Item MY_NEW_ITEM = new Bush();
 
-	public static final Block MY_PLANT_BLOCK = new PlantBush(FabricBlockSettings.copyOf(Blocks.SUGAR_CANE));
+	public static final Block MY_PLANT_BLOCK = new PlantBush(FabricBlockSettings.copyOf(Blocks.SUGAR_CANE).nonOpaque());
 	public static final Item MY_PLANT_ITEM = new BlockItem(MY_PLANT_BLOCK, new Item.Settings().group(ItemGroup.MISC));
 	public static final Item IGAR = new Item(new Item.Settings().group(ItemGroup.MISC)) {
 		private static final int EFFECT_DURATION = 15 * 20; // Длительность эффекта в тиках
@@ -46,6 +46,7 @@ public class Bebush implements ModInitializer {
 				player.addStatusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, EFFECT_DURATION));
 				player.addStatusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, 4 * 60 * 20));
 				player.addStatusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, 6 * 60 * 20));
+				player.addStatusEffect(new StatusEffectInstance(StatusEffects.HUNGER, 2 * 60 * 20));
 				player.getStackInHand(hand).decrement(1);
 
 				// Генерируем партиклы различных цветов вокруг игрока

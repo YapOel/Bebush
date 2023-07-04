@@ -18,10 +18,12 @@
 
   "environment": "*",
   "entrypoints": {
+
     "main": [
       "org.sgx.bebush.Bebush"
     ],
-    "client": [ "org.sgx.bebush.BebushClient"]
+    "client": [ "org.sgx.bebush.BebushClient"
+    ]
   },
   "mixins": [
     "bebush.mixins.json"
